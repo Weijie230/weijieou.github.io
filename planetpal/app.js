@@ -58,3 +58,9 @@ document.getElementById("speakButton")
 
     speechSynthesis.speak(speech);
   });
+if ("serviceWorker" in navigator) {
+
+  navigator.serviceWorker.register(
+    "service-worker.js"
+  );
+}
