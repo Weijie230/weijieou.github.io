@@ -30,7 +30,19 @@ img {
   max-width: 100%;
   border-radius: 10px;
 }
+
+/* Page links */
+.page-links {
+  margin-top: 25px;
+}
+
 .page-links a {
   color: white;
   font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.page-links a:hover {
+  color: lightblue;
 }
