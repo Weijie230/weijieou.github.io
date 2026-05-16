@@ -1,1 +1,21 @@
+{
+  "planets": [
+    {
+      "title": "Mercury",
+      "description": "Mercury is the closest planet to the Sun.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg"
+    },
 
+    {
+      "title": "Venus",
+      "description": "Venus is the hottest planet in the solar system.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg"
+    },
+
+    {
+      "title": "Earth",
+      "description": "Earth is the only known planet with life.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg"
+    }
+  ]
+}
