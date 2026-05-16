@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multimedia Dictionary</title>
+  <link rel="stylesheet" href="dictionary.css">
+</head>
+
+<body>
+  <h1>Multimedia Dictionary</h1>
+  <p>Select a word to see and hear a sentence.</p>
+
+  <section>
+    <h2>Word Section</h2>
+
+    <select id="wordSelect" onchange="syncSentence()">
+      <option value="">-- Select a Word --</option>
+      <option value="Apple" data-sentence="The apple is red and sweet.">Apple</option>
+      <option value="Dog" data-sentence="The dog runs in the park.">Dog</option>
+      <option value="Sun" data-sentence="The sun shines brightly in the sky.">Sun</option>
+      <option value="Book" data-sentence="I read a book every night.">Book</option>
+      <option value="Car" data-sentence="The car drives down the road.">Car</option>
+    </select>
+
+    <button onclick="speakWord()">Speak Word</button>
+  </section>
+
+  <section>
+    <h2>Sentence Section</h2>
+
+    <textarea id="sentenceDisplay" readonly></textarea>
+
+    <button onclick="speakSentence()">Speak Sentence</button>
+  </section>
+
+  <script src="dictionary.js"></script>
+</body>
+</html>
