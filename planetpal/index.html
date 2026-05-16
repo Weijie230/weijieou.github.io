@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
 
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>PlanetPal</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+  <header>
+    <h1>PlanetPal</h1>
+    <p>Learn about the planets in our solar system.</p>
+  </header>
+
+  <main>
+
+    <select id="planetMenu">
+      <option>Loading planets...</option>
+    </select>
+
+    <button id="speakButton">
+      Speak Description
+    </button>
+
+    <section id="planetCard">
+
+      <h2 id="planetTitle"></h2>
+
+      <img id="planetImage"
+           src=""
+           alt="Planet Image">
+
+      <p id="planetDescription"></p>
+
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
