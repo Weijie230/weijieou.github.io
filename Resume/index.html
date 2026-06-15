@@ -10,17 +10,22 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
+
 html{
     scroll-behavior:smooth;
 }
 
 body{
-    font-family:Arial, sans-serif;
-    background:#f4f7fb;
+    font-family:Arial,sans-serif;
+    background:#f5f7fa;
 }
 
 section{
-    padding:80px 20px;
+    padding:70px 0;
+}
+
+.navbar{
+    box-shadow:0 2px 10px rgba(0,0,0,.15);
 }
 
 .hero{
@@ -36,30 +41,23 @@ section{
 }
 
 .hero p{
-    font-size:1.3rem;
+    font-size:1.2rem;
 }
 
 .card{
     border:none;
     border-radius:15px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.1);
-    height:100%;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.project-card img{
+    height:180px;
+    object-fit:cover;
 }
 
 .skill-badge{
-    margin:6px;
-    font-size:15px;
-}
-
-.carousel img{
-    height:480px;
-    object-fit:cover;
-}
-
-.project-img{
-    height:220px;
-    object-fit:cover;
-    border-radius:15px 15px 0 0;
+    margin:4px;
+    font-size:14px;
 }
 
 footer{
@@ -69,329 +67,381 @@ footer{
     padding:20px;
 }
 
-.navbar{
-    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+.section-title{
+    margin-bottom:40px;
+    font-weight:bold;
+    text-align:center;
 }
 
 .contact-link{
     text-decoration:none;
 }
+
 </style>
 </head>
 
 <body>
 
+<!-- NAVBAR -->
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 <div class="container">
 
-<a class="navbar-brand fw-bold" href="#">Weijie Ou</a>
+<a class="navbar-brand fw-bold" href="#">
+Weijie Ou
+</a>
 
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav">
 <span class="navbar-toggler-icon"></span>
 </button>
 
 <div class="collapse navbar-collapse" id="navbarNav">
+
 <ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
-<li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-<li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
-<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-<li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-<li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li>
-<li class="nav-item"><a class="nav-link" href="#honors">Honors</a></li>
-<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+<li class="nav-item">
+<a class="nav-link" href="#about">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#education">Education</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#skills">Skills</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#projects">Projects</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#contact">Contact</a>
+</li>
+
 </ul>
+
 </div>
 
 </div>
 </nav>
 
+<!-- HERO -->
+
 <section class="hero">
+
 <div class="container">
 
 <h1>Weijie Ou</h1>
 
-<p>Front-End Developer • Multimedia Computing Student</p>
+<p>
+Front-End Developer • Multimedia Computing Student
+</p>
 
-<p>HTML • CSS • JavaScript • Bootstrap • Three.js</p>
+<p>
+HTML • CSS • JavaScript • Bootstrap • Three.js
+</p>
 
-<a href="#portfolio" class="btn btn-light btn-lg mt-3">View My Projects</a>
-<a href="https://weijie230.github.io/weijieou.github.io/index.html" target="_blank" class="btn btn-outline-light btn-lg mt-3 ms-2">Open Portfolio</a>
+<a href="#projects" class="btn btn-light btn-lg mt-3">
+View Projects
+</a>
+
+<a href="https://weijie230.github.io/weijieou.github.io/index.html"
+target="_blank"
+class="btn btn-outline-light btn-lg mt-3 ms-2">
+My Portfolio
+</a>
 
 </div>
+
 </section>
 
-<section id="summary">
+<!-- ABOUT -->
+
+<section id="about">
+
 <div class="container">
 
-<h2 class="text-center mb-5">Professional Summary</h2>
+<h2 class="section-title">
+About Me
+</h2>
 
 <div class="card p-4">
+
 <p>
-Multimedia Computing student at Brooklyn College with experience in front-end web development,
-responsive design, UI structure, and interactive multimedia applications. Skilled in HTML, CSS,
-JavaScript, Bootstrap, and Three.js. Interested in building modern websites, user-friendly interfaces,
-and browser-based 3D experiences.
+I am a Multimedia Computing student at Brooklyn College with experience in front-end development, responsive web design, UI implementation, and interactive multimedia applications. I enjoy creating websites and browser-based experiences that combine design, usability, and programming.
 </p>
+
 </div>
 
 </div>
+
 </section>
+
+<!-- EDUCATION -->
 
 <section id="education" class="bg-light">
+
 <div class="container">
 
-<h2 class="text-center mb-5">Education</h2>
+<h2 class="section-title">
+Education
+</h2>
 
 <div class="card p-4">
+
 <h4>Brooklyn College, CUNY</h4>
-<p>Bachelor of Science in Multimedia Computing</p>
-<p>Expected Graduation: December 2026</p>
-<p>Dean's List: Spring 2024, Spring 2025, Spring 2026</p>
+
+<p>
+Bachelor of Science in Multimedia Computing
+</p>
+
+<p>
+Expected Graduation: December 2026
+</p>
+
+<p>
+Dean's List — Spring 2024, Spring 2025, Spring 2026
+</p>
+
 </div>
 
 </div>
+
 </section>
 
-<section id="courses">
+<!-- SKILLS -->
+
+<section id="skills">
+
 <div class="container">
 
-<h2 class="text-center mb-5">Relevant Coursework</h2>
+<h2 class="section-title">
+Skills
+</h2>
 
 <div class="card p-4">
-<div class="row text-center">
-<div class="col-md-4 mb-3">Intro to Java Programming</div>
-<div class="col-md-4 mb-3">Data Structures</div>
-<div class="col-md-4 mb-3">Database Systems</div>
-<div class="col-md-4 mb-3">Analysis of Algorithms</div>
-<div class="col-md-4 mb-3">3D Graphics and Animation</div>
-<div class="col-md-4 mb-3">Principles of Robotics</div>
-<div class="col-md-4 mb-3">Intro to Multimedia Computing</div>
-<div class="col-md-4 mb-3">Digital Art</div>
-<div class="col-md-4 mb-3">Large-Scale Applications</div>
-</div>
-</div>
-
-</div>
-</section>
-
-<section id="skills" class="bg-light">
-<div class="container">
-
-<h2 class="text-center mb-5">Skills</h2>
-
-<div class="text-center">
 
 <h5>Programming Languages</h5>
+
 <span class="badge bg-primary skill-badge">Java</span>
 <span class="badge bg-success skill-badge">HTML</span>
 <span class="badge bg-danger skill-badge">CSS</span>
 <span class="badge bg-warning text-dark skill-badge">JavaScript</span>
 
-<br><br>
+<hr>
 
 <h5>Frameworks & Libraries</h5>
+
 <span class="badge bg-info text-dark skill-badge">Bootstrap</span>
 <span class="badge bg-dark skill-badge">Three.js</span>
 
-<br><br>
+<hr>
 
-<h5>Design & Animation Software</h5>
+<h5>Design Software</h5>
+
 <span class="badge bg-secondary skill-badge">Photoshop</span>
 <span class="badge bg-primary skill-badge">Illustrator</span>
 <span class="badge bg-success skill-badge">InDesign</span>
 <span class="badge bg-danger skill-badge">After Effects</span>
 <span class="badge bg-dark skill-badge">Autodesk Maya</span>
 
-<br><br>
-
-<h5>Multimedia & Design</h5>
-<span class="badge bg-primary skill-badge">3D Graphics</span>
-<span class="badge bg-success skill-badge">Digital Art</span>
-<span class="badge bg-danger skill-badge">UI Mockups</span>
-<span class="badge bg-warning text-dark skill-badge">Storyboarding</span>
-
-<br><br>
-
-<h5>Languages</h5>
-<span class="badge bg-info text-dark skill-badge">Mandarin</span>
-<span class="badge bg-dark skill-badge">English</span>
-
 </div>
 
 </div>
+
 </section>
 
-<section id="experience">
+<!-- EXPERIENCE -->
+
+<section class="bg-light">
+
 <div class="container">
 
-<h2 class="text-center mb-5">Work Experience</h2>
+<h2 class="section-title">
+Experience
+</h2>
 
 <div class="card p-4">
+
 <h4>Studio Multisweet</h4>
-<h6>Front-End Developer | New York, NY | September 2023 - January 2025</h6>
+
+<p>
+<strong>Front-End Developer</strong>
+<br>
+September 2023 – January 2025
+</p>
 
 <ul>
-<li>Designed and developed responsive website layouts using HTML, CSS, and JavaScript.</li>
-<li>Improved website usability, accessibility, navigation flow, typography, and responsive layouts.</li>
-<li>Maintained and updated website content while ensuring design consistency and cross-browser compatibility.</li>
+<li>Developed responsive websites using HTML, CSS, and JavaScript.</li>
+<li>Improved usability, accessibility, and navigation structure.</li>
+<li>Maintained website content and design consistency.</li>
 </ul>
+
 </div>
 
 </div>
+
 </section>
 
-<section id="portfolio" class="bg-light">
+<!-- PROJECTS -->
+
+<section id="projects">
+
 <div class="container">
 
-<h2 class="text-center mb-5">Featured Projects</h2>
-
-<div id="projectCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
-<div class="carousel-inner">
-
-<div class="carousel-item active">
-<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200" class="d-block w-100" alt="PlanetPal">
-<div class="carousel-caption bg-dark bg-opacity-75 rounded p-3">
-<h3>PlanetPal Progressive Web App</h3>
-<p>PWA with offline support, service workers, responsive design, and installable browser support.</p>
-</div>
-</div>
-
-<div class="carousel-item">
-<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200" class="d-block w-100" alt="Resume Website">
-<div class="carousel-caption bg-dark bg-opacity-75 rounded p-3">
-<h3>Responsive Resume Website</h3>
-<p>Bootstrap portfolio website with navbar, project sections, image carousel, and responsive layout.</p>
-</div>
-</div>
-
-<div class="carousel-item">
-<img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=1200" class="d-block w-100" alt="Three.js Snow Globe">
-<div class="carousel-caption bg-dark bg-opacity-75 rounded p-3">
-<h3>Interactive 3D Snow Globe</h3>
-<p>Three.js project using animated snow particles, lighting, shadows, textures, and camera controls.</p>
-</div>
-</div>
-
-</div>
-
-<button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-<span class="carousel-control-prev-icon"></span>
-</button>
-
-<button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-<span class="carousel-control-next-icon"></span>
-</button>
-</div>
+<h2 class="section-title">
+Featured Projects
+</h2>
 
 <div class="row g-4">
 
 <div class="col-md-4">
-<div class="card">
-<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800" class="project-img" alt="PlanetPal PWA">
+
+<div class="card project-card">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1000" alt="PlanetPal">
+
 <div class="card-body">
-<h5 class="card-title">PlanetPal Progressive Web App</h5>
-<p class="card-text">
-Built a PWA with offline caching, service workers, responsive planet cards, and installable browser support.
-</p>
-<a href="https://weijie230.github.io/weijieou.github.io/index.html" target="_blank" class="btn btn-dark">Live Demo</a>
-<a href="https://github.com/Weijie230" target="_blank" class="btn btn-outline-dark">GitHub</a>
-</div>
-</div>
-</div>
 
-<div class="col-md-4">
-<div class="card">
-<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800" class="project-img" alt="Resume Website">
-<div class="card-body">
-<h5 class="card-title">Responsive Resume Website</h5>
-<p class="card-text">
-Created a responsive online resume website using Bootstrap grid, navbar, cards, carousel, and semantic HTML.
-</p>
-<a href="https://weijie230.github.io/weijieou.github.io/index.html" target="_blank" class="btn btn-dark">Live Demo</a>
-<a href="https://github.com/Weijie230" target="_blank" class="btn btn-outline-dark">GitHub</a>
-</div>
-</div>
-</div>
+<h5>PlanetPal PWA</h5>
 
-<div class="col-md-4">
-<div class="card">
-<img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=800" class="project-img" alt="Three.js Snow Globe">
-<div class="card-body">
-<h5 class="card-title">Interactive 3D Snow Globe</h5>
-<p class="card-text">
-Created a browser-based 3D scene using Three.js with lighting, shadows, textures, animation, and user interaction.
-</p>
-<a href="https://weijie230.github.io/weijieou.github.io/index.html" target="_blank" class="btn btn-dark">Live Demo</a>
-<a href="https://github.com/Weijie230" target="_blank" class="btn btn-outline-dark">GitHub</a>
-</div>
-</div>
-</div>
-
-</div>
-
-</div>
-</section>
-
-<section id="honors">
-<div class="container">
-
-<h2 class="text-center mb-5">Activities & Honors</h2>
-
-<div class="card p-4">
-<ul>
-<li>Dean's List - Spring 2024</li>
-<li>Dean's List - Spring 2025</li>
-<li>Brooklyn College Multimedia Computing Student</li>
-<li>Completed multiple front-end development, UI/UX, PWA, and 3D graphics projects</li>
-<li>Experience with Bootstrap, JavaScript, Three.js, and responsive web design</li>
+<ul class="small">
+<li>Offline caching</li>
+<li>Responsive design</li>
+<li>Installable web app</li>
+<li>Service workers</li>
 </ul>
+
+<a href="#" class="btn btn-dark btn-sm">
+Demo
+</a>
+
 </div>
 
 </div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card project-card">
+
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1000" alt="Resume Website">
+
+<div class="card-body">
+
+<h5>Responsive Resume Website</h5>
+
+<ul class="small">
+<li>Bootstrap layout</li>
+<li>Responsive navbar</li>
+<li>Portfolio showcase</li>
+<li>Modern UI</li>
+</ul>
+
+<a href="https://weijie230.github.io/weijieou.github.io/index.html"
+target="_blank"
+class="btn btn-dark btn-sm">
+Demo
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card project-card">
+
+<img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=1000" alt="Snow Globe">
+
+<div class="card-body">
+
+<h5>3D Snow Globe</h5>
+
+<ul class="small">
+<li>Three.js</li>
+<li>Lighting & shadows</li>
+<li>Particle animation</li>
+<li>Interactive camera</li>
+</ul>
+
+<a href="#" class="btn btn-dark btn-sm">
+Demo
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
+
+<!-- CONTACT -->
 
 <section id="contact" class="bg-light">
+
 <div class="container">
 
-<h2 class="text-center mb-5">Contact</h2>
+<h2 class="section-title">
+Contact
+</h2>
 
 <div class="card p-4 text-center">
 
 <p>
-Email:
-<a class="contact-link" href="mailto:weijieou37@gmail.com">
+Mail: 
+<a class="contact-link"
+href="mailto:weijieou37@gmail.com">
 weijieou37@gmail.com
 </a>
 </p>
 
-<p>Phone: +1 (631) 530-0754</p>
+<p>
+Phone: +1 (631) 530-0754
+</p>
 
 <p>
-Portfolio:
-<a class="contact-link" href="https://weijie230.github.io/weijieou.github.io/index.html" target="_blank">
-weijie230.github.io/weijieou.github.io
+Github: 
+<a class="contact-link"
+href="https://github.com/Weijie230"
+target="_blank">
+GitHub Profile
 </a>
 </p>
 
 <p>
-GitHub:
-<a class="contact-link" href="https://github.com/Weijie230" target="_blank">
-github.com/Weijie230
+Portfolio: 
+<a class="contact-link"
+href="https://weijie230.github.io/weijieou.github.io/index.html"
+target="_blank">
+Portfolio Website
 </a>
 </p>
 
-<a href="https://weijie230.github.io/weijieou.github.io/index.html" target="_blank" class="btn btn-dark mt-3">
-Visit My Portfolio
-</a>
-
 </div>
 
 </div>
+
 </section>
 
 <footer>
-<p>© 2026 Weijie Ou | Front-End Developer Portfolio</p>
+
+<p>
+© 2026 Weijie Ou Portfolio
+</p>
+
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
